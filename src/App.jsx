@@ -297,7 +297,8 @@ const Portfolio = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
-          className={`fixed bottom-6 md:bottom-10 flex items-center justify-center gap-2 md:gap-4 px-4 py-3 md:px-8 md:py-4 ${theme.dock} backdrop-blur-xl border rounded-full shadow-2xl z-50 w-[90%] max-w-md md:w-auto md:max-w-none`}
+         className={`fixed bottom-10 flex items-center gap-4 px-5 py-4 ${theme.dock} backdrop-blur-xl border rounded-full shadow-2xl z-50`}
+
         >
           <DockIcon icon={<Github size={20} />} href="https://github.com/shivamsinghx" color={isDark ? "#ffffff" : "#000000"} label="GitHub" />
           <DockIcon icon={<Linkedin size={20} />} href="https://linkedin.com/in/shivamsingx" color="#0A66C2" label="LinkedIn" />
