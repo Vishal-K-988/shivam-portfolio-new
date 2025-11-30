@@ -49,11 +49,11 @@ const Portfolio = () => {
       className="min-h-screen w-full overflow-x-hidden relative flex flex-col items-center justify-center selection:bg-green-200 selection:text-green-900"
     >
       
-      {/* Backgrounds - Light Mode */}
+      
       <div className="absolute inset-0 z-0 bg-[#fafafa] overflow-hidden">
         <motion.div 
           className="absolute inset-0 opacity-100"
-          // Light mode wave animation
+          
           animate={{ 
             backgroundPosition: ["0px 0px", "32px 32px"] 
           }}
@@ -75,7 +75,7 @@ const Portfolio = () => {
         />
       </div>
 
-      {/* Backgrounds - Dark Mode */}
+      
       <motion.div 
         className="absolute inset-0 z-0 bg-[#050505]"
         initial={false}
@@ -84,7 +84,7 @@ const Portfolio = () => {
         }}
         transition={rippleTransition}
       >
-        {/* CHANGED: Converted to motion.div and added wave animation here too */}
+        
         <motion.div 
           className="absolute inset-0"
           animate={{ 
@@ -128,13 +128,11 @@ const Portfolio = () => {
         </AnimatePresence>
       </motion.button>
 
-    {/* Top Right Nav */}
-    {/* CHANGED: Added explicit text color class so it syncs with theme change */}
-      {/* Top Right Nav */}
+    
       <div className={`fixed top-6 right-6 md:top-8 md:right-8 z-50 flex items-center gap-4 md:gap-8 text-sm font-semibold transition-colors duration-500 ${isDark ? "text-white" : "text-black"}`}>
         <div 
           onClick={() => setIsMenuOpen(true)}
-          // Removed any 'animate' classes. Only has hover and transition.
+          
           className="hover:text-green-500 transition-colors cursor-pointer flex items-center gap-1"
         >
           PROJECTS <ArrowUpRight size={16} />
@@ -150,7 +148,7 @@ const Portfolio = () => {
         </a>
       </div>
 
-      {/* Full Screen Menu */}
+      
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
@@ -203,7 +201,7 @@ const Portfolio = () => {
       </AnimatePresence>
 
     
-      {/* Main Content */}
+      
       <main className="z-10 flex flex-col items-center text-center w-full max-w-5xl px-4 pt-20 md:pt-0">
         
         <div className="space-y-4">
@@ -264,7 +262,7 @@ const Portfolio = () => {
           </motion.h2>
         </div>
 
-        {/* Tech Stack Grid */}
+        
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -294,7 +292,7 @@ const Portfolio = () => {
 
         <AvailabilityBadge isDark={isDark} />
 
-        {/* Bottom Dock */}
+        
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -317,7 +315,7 @@ const Portfolio = () => {
 };
 
 
-// Helper Components
+
 
 const DockIcon = ({ icon, href, color, label }) => {
   const [isHovered, setIsHovered] = useState(false);
