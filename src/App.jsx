@@ -191,7 +191,7 @@ const Portfolio = () => {
                ))}
               </div>
               <div className={`p-8 md:p-12 ${isDark ? "bg-[#111]" : "bg-black"} text-white flex flex-col md:flex-row justify-between items-center gap-4`}>
-                 <div className="text-sm font-medium opacity-70">© 2025 Shivam. All rights reserved.</div>
+                 <div className="text-sm font-medium opacity-70">© WORLD IS A CRUEL PLACE.</div>
                  <div className="flex gap-6 text-sm font-bold">
                     <a href="https://github.com/shivamsinghx" target="_blank" rel="noreferrer" className="cursor-pointer hover:text-green-400">GITHUB</a>
                     <a href="https://linkedin.com/in/shivamsingx" target="_blank" rel="noreferrer" className="cursor-pointer hover:text-blue-600">LINKEDIN</a>
