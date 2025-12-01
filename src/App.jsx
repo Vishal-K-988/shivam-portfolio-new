@@ -231,7 +231,7 @@ const Portfolio = () => {
               transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1.0] }} 
               className="px-4 py-1.5 md:px-6 md:py-2 rounded-full bg-[#6ee786] text-black shadow-[0_0_20px_rgba(110,231,134,0.3)] cursor-default"
             >
-              Frontend React dev.
+              Fullstack Developer .
             </motion.span>
           </motion.div>
 
@@ -307,7 +307,9 @@ const Portfolio = () => {
           <DockIcon icon={<SiDiscord size={20} />} href="https://discord.com/" color="#5865F2" label="Discord" />
           <DockIcon icon={<SiSteam size={20} />} href="https://steamcommunity.com/profiles/76561198980778931/" color={isDark ? "#66c0f4" : "#171a21"} label="Steam" />
           
-          <ImageDockIcon src="/gmail.png" href="mailto:shivamsingx@gmail.com" label="Gmail" />
+          
+          <ImageDockIcon src="/gmail.png" href="mailto:shivamsingx@gmail.com"  label="Gmail" />
+          <ImageDockIcon src="/stone.jpg"  href="https://maps.app.goo.gl/HaDh4aGDES55LrTB7" label="Ladakh" />
         </motion.div>
 
       </main>
@@ -328,7 +330,7 @@ const DockIcon = ({ icon, href, color, label }) => {
       rel="noreferrer"
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      whileHover={{ scale: 1.2, y: -4 }}
+      whileHover={{ scale: 1.6, y: -4 }}
       transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1.0] }}
       className="relative flex items-center justify-center group md:p-1"
     >
@@ -355,14 +357,14 @@ const ImageDockIcon = ({ src, href, label }) => {
       rel="noreferrer"
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      whileHover={{ scale: 1.2, y: -4 }}
+      whileHover={{ scale: 1.6, y: -4 }}
       transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1.0] }}
       className="relative flex items-center justify-center group md:p-1"
     >
       <img 
         src={src}
         alt={label}
-        className="w-5 h-5 object-contain transition-all duration-300"
+        className="w-5 h-5 object-contain transition-all duration-300 rounded-sm"
         style={{ 
           filter: isHovered ? `drop-shadow(0 0 15px rgba(234, 67, 53, 0.6))` : 'none'
         }}
